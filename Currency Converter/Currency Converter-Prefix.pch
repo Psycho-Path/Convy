@@ -1,0 +1,38 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "2GISRatesServer.h"
+    #import "2GISCurrencies.h"
+    #import <AudioToolbox/AudioToolbox.h>
+
+    /**
+     The name of notification that tells ViewController about updated data.
+     */
+    #define dataArrivedNotification @"DataArrived"
+
+    /**
+     The key of currency symbol
+     */
+    #define symbolKey @"symbol"
+
+    /**
+     The key of currency code
+     */
+    #define codeKey @"code"
+    /**
+     The key of currency display name
+     */
+    #define displayKey @"display"
+#endif

@@ -1,0 +1,742 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D90A983C1A9B3E3B003371AB /* 2GISKeyboardButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A983B1A9B3E3B003371AB /* 2GISKeyboardButton.m */; };
+		D90A983F1A9B44E5003371AB /* 2GISKeyboardContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A983E1A9B44E5003371AB /* 2GISKeyboardContainer.m */; };
+		D90A98441A9B46B6003371AB /* keyBoard_backgroundPattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A98431A9B46B6003371AB /* keyBoard_backgroundPattern@2x.png */; };
+		D90A98461A9B62EC003371AB /* keyboardButton_backgroundPattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A98451A9B62EC003371AB /* keyboardButton_backgroundPattern@2x.png */; };
+		D90A984C1A9B6678003371AB /* 2GISMainScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A984B1A9B6678003371AB /* 2GISMainScreenView.m */; };
+		D90A984E1A9B69B9003371AB /* mainBackgroundPattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A984D1A9B69B9003371AB /* mainBackgroundPattern@2x.png */; };
+		D90A98521A9B6AD4003371AB /* 2GISSourceSum.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A98511A9B6AD4003371AB /* 2GISSourceSum.m */; };
+		D90A98551A9B6D6E003371AB /* 2GISTargetSumLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A98541A9B6D6E003371AB /* 2GISTargetSumLabel.m */; };
+		D90A98591A9B7256003371AB /* 2GISSourceCurrencyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A98581A9B7256003371AB /* 2GISSourceCurrencyButton.m */; };
+		D90A985C1A9B7276003371AB /* 2GISTardetCurrencyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A985B1A9B7276003371AB /* 2GISTardetCurrencyButton.m */; };
+		D90A985F1A9B758B003371AB /* targetCurrencyButton_pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A985E1A9B758B003371AB /* targetCurrencyButton_pattern@2x.png */; };
+		D90A98621A9B7DD9003371AB /* 2GISSeparator.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A98611A9B7DD9003371AB /* 2GISSeparator.m */; };
+		D90A98641A9B9175003371AB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90A98631A9B9175003371AB /* AudioToolbox.framework */; };
+		D90A986B1A9BA9B1003371AB /* 2GISCurrencies.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A986A1A9BA9B1003371AB /* 2GISCurrencies.m */; };
+		D90A986E1A9C6AAB003371AB /* 2GISCurrencySelectionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A986D1A9C6AAB003371AB /* 2GISCurrencySelectionButton.m */; };
+		D90A98701A9CA2DB003371AB /* squared_metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A986F1A9CA2DB003371AB /* squared_metal@2x.png */; };
+		D90A98731A9CA5F9003371AB /* 2GISDataReceivingPreloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A98721A9CA5F9003371AB /* 2GISDataReceivingPreloader.m */; };
+		D90A98751A9CB0AD003371AB /* tick_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A98741A9CB0AD003371AB /* tick_2@2x.png */; };
+		D90A98791A9CB72F003371AB /* 2GISKeyBoardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A98781A9CB72F003371AB /* 2GISKeyBoardHelper.m */; };
+		D90A987C1A9CB94F003371AB /* 2GISCountHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A987B1A9CB94F003371AB /* 2GISCountHelper.m */; };
+		D90A987F1A9CC710003371AB /* 2GISCurrenciesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D90A987E1A9CC710003371AB /* 2GISCurrenciesViewController.m */; };
+		D90A98861A9CEABE003371AB /* closeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A98851A9CEABE003371AB /* closeButton@2x.png */; };
+		D90A98881A9D0427003371AB /* searchBar_pattern@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A98871A9D0427003371AB /* searchBar_pattern@2x.png */; };
+		D90A988A1A9D070F003371AB /* currencyTableViewBackGround@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D90A98891A9D070F003371AB /* currencyTableViewBackGround@2x.png */; };
+		D9C9BEF71A98AEF500EF9F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C9BEF61A98AEF500EF9F16 /* Foundation.framework */; };
+		D9C9BEF91A98AEF500EF9F16 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C9BEF81A98AEF500EF9F16 /* CoreGraphics.framework */; };
+		D9C9BEFB1A98AEF500EF9F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C9BEFA1A98AEF500EF9F16 /* UIKit.framework */; };
+		D9C9BF011A98AEF500EF9F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9C9BEFF1A98AEF500EF9F16 /* InfoPlist.strings */; };
+		D9C9BF031A98AEF500EF9F16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C9BF021A98AEF500EF9F16 /* main.m */; };
+		D9C9BF071A98AEF500EF9F16 /* _GISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C9BF061A98AEF500EF9F16 /* _GISAppDelegate.m */; };
+		D9C9BF0A1A98AEF500EF9F16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9C9BF081A98AEF500EF9F16 /* Main.storyboard */; };
+		D9C9BF0D1A98AEF500EF9F16 /* _GISViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C9BF0C1A98AEF500EF9F16 /* _GISViewController.m */; };
+		D9C9BF0F1A98AEF500EF9F16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C9BF0E1A98AEF500EF9F16 /* Images.xcassets */; };
+		D9C9BF161A98AEF500EF9F16 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C9BF151A98AEF500EF9F16 /* XCTest.framework */; };
+		D9C9BF171A98AEF500EF9F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C9BEF61A98AEF500EF9F16 /* Foundation.framework */; };
+		D9C9BF181A98AEF500EF9F16 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C9BEFA1A98AEF500EF9F16 /* UIKit.framework */; };
+		D9C9BF201A98AEF500EF9F16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9C9BF1E1A98AEF500EF9F16 /* InfoPlist.strings */; };
+		D9C9BF221A98AEF500EF9F16 /* Currency_ConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C9BF211A98AEF500EF9F16 /* Currency_ConverterTests.m */; };
+		D9C9BF341A98B29700EF9F16 /* 2GISRatesServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C9BF331A98B29700EF9F16 /* 2GISRatesServer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9C9BF191A98AEF500EF9F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9C9BEEB1A98AEF400EF9F16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9C9BEF21A98AEF500EF9F16;
+			remoteInfo = "Currency Converter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D90A983A1A9B3E3B003371AB /* 2GISKeyboardButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISKeyboardButton.h; path = VIEW/KEYBOARD/2GISKeyboardButton.h; sourceTree = "<group>"; };
+		D90A983B1A9B3E3B003371AB /* 2GISKeyboardButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISKeyboardButton.m; path = VIEW/KEYBOARD/2GISKeyboardButton.m; sourceTree = "<group>"; };
+		D90A983D1A9B44E5003371AB /* 2GISKeyboardContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISKeyboardContainer.h; path = VIEW/KEYBOARD/2GISKeyboardContainer.h; sourceTree = "<group>"; };
+		D90A983E1A9B44E5003371AB /* 2GISKeyboardContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISKeyboardContainer.m; path = VIEW/KEYBOARD/2GISKeyboardContainer.m; sourceTree = "<group>"; };
+		D90A98431A9B46B6003371AB /* keyBoard_backgroundPattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyBoard_backgroundPattern@2x.png"; sourceTree = "<group>"; };
+		D90A98451A9B62EC003371AB /* keyboardButton_backgroundPattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardButton_backgroundPattern@2x.png"; sourceTree = "<group>"; };
+		D90A984A1A9B6678003371AB /* 2GISMainScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISMainScreenView.h; path = "VIEW/MAIN SCREEN/2GISMainScreenView.h"; sourceTree = "<group>"; };
+		D90A984B1A9B6678003371AB /* 2GISMainScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISMainScreenView.m; path = "VIEW/MAIN SCREEN/2GISMainScreenView.m"; sourceTree = "<group>"; };
+		D90A984D1A9B69B9003371AB /* mainBackgroundPattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainBackgroundPattern@2x.png"; sourceTree = "<group>"; };
+		D90A98501A9B6AD4003371AB /* 2GISSourceSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISSourceSum.h; path = VIEW/LABELS/2GISSourceSum.h; sourceTree = "<group>"; };
+		D90A98511A9B6AD4003371AB /* 2GISSourceSum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISSourceSum.m; path = VIEW/LABELS/2GISSourceSum.m; sourceTree = "<group>"; };
+		D90A98531A9B6D6E003371AB /* 2GISTargetSumLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISTargetSumLabel.h; path = VIEW/LABELS/2GISTargetSumLabel.h; sourceTree = "<group>"; };
+		D90A98541A9B6D6E003371AB /* 2GISTargetSumLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISTargetSumLabel.m; path = VIEW/LABELS/2GISTargetSumLabel.m; sourceTree = "<group>"; };
+		D90A98571A9B7256003371AB /* 2GISSourceCurrencyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISSourceCurrencyButton.h; path = "VIEW/CURRENCY BUTTONS/2GISSourceCurrencyButton.h"; sourceTree = "<group>"; };
+		D90A98581A9B7256003371AB /* 2GISSourceCurrencyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISSourceCurrencyButton.m; path = "VIEW/CURRENCY BUTTONS/2GISSourceCurrencyButton.m"; sourceTree = "<group>"; };
+		D90A985A1A9B7276003371AB /* 2GISTardetCurrencyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISTardetCurrencyButton.h; path = "VIEW/CURRENCY BUTTONS/2GISTardetCurrencyButton.h"; sourceTree = "<group>"; };
+		D90A985B1A9B7276003371AB /* 2GISTardetCurrencyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISTardetCurrencyButton.m; path = "VIEW/CURRENCY BUTTONS/2GISTardetCurrencyButton.m"; sourceTree = "<group>"; };
+		D90A985E1A9B758B003371AB /* targetCurrencyButton_pattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "targetCurrencyButton_pattern@2x.png"; sourceTree = "<group>"; };
+		D90A98601A9B7DD9003371AB /* 2GISSeparator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISSeparator.h; path = VIEW/LABELS/2GISSeparator.h; sourceTree = "<group>"; };
+		D90A98611A9B7DD9003371AB /* 2GISSeparator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISSeparator.m; path = VIEW/LABELS/2GISSeparator.m; sourceTree = "<group>"; };
+		D90A98631A9B9175003371AB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D90A98691A9BA9B1003371AB /* 2GISCurrencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISCurrencies.h; path = MODEL/CURRENCIES/2GISCurrencies.h; sourceTree = "<group>"; };
+		D90A986A1A9BA9B1003371AB /* 2GISCurrencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISCurrencies.m; path = MODEL/CURRENCIES/2GISCurrencies.m; sourceTree = "<group>"; };
+		D90A986C1A9C6AAA003371AB /* 2GISCurrencySelectionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISCurrencySelectionButton.h; path = "VIEW/CURRENCY BUTTONS/2GISCurrencySelectionButton.h"; sourceTree = "<group>"; };
+		D90A986D1A9C6AAB003371AB /* 2GISCurrencySelectionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISCurrencySelectionButton.m; path = "VIEW/CURRENCY BUTTONS/2GISCurrencySelectionButton.m"; sourceTree = "<group>"; };
+		D90A986F1A9CA2DB003371AB /* squared_metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "squared_metal@2x.png"; sourceTree = "<group>"; };
+		D90A98711A9CA5F9003371AB /* 2GISDataReceivingPreloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISDataReceivingPreloader.h; path = "VIEW/MAIN SCREEN/2GISDataReceivingPreloader.h"; sourceTree = "<group>"; };
+		D90A98721A9CA5F9003371AB /* 2GISDataReceivingPreloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISDataReceivingPreloader.m; path = "VIEW/MAIN SCREEN/2GISDataReceivingPreloader.m"; sourceTree = "<group>"; };
+		D90A98741A9CB0AD003371AB /* tick_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tick_2@2x.png"; sourceTree = "<group>"; };
+		D90A98771A9CB72F003371AB /* 2GISKeyBoardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISKeyBoardHelper.h; path = MODEL/HELPERS/2GISKeyBoardHelper.h; sourceTree = "<group>"; };
+		D90A98781A9CB72F003371AB /* 2GISKeyBoardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISKeyBoardHelper.m; path = MODEL/HELPERS/2GISKeyBoardHelper.m; sourceTree = "<group>"; };
+		D90A987A1A9CB94F003371AB /* 2GISCountHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISCountHelper.h; path = MODEL/HELPERS/2GISCountHelper.h; sourceTree = "<group>"; };
+		D90A987B1A9CB94F003371AB /* 2GISCountHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISCountHelper.m; path = MODEL/HELPERS/2GISCountHelper.m; sourceTree = "<group>"; };
+		D90A987D1A9CC710003371AB /* 2GISCurrenciesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISCurrenciesViewController.h; path = VIEWCONTROLLERS/2GISCurrenciesViewController.h; sourceTree = "<group>"; };
+		D90A987E1A9CC710003371AB /* 2GISCurrenciesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISCurrenciesViewController.m; path = VIEWCONTROLLERS/2GISCurrenciesViewController.m; sourceTree = "<group>"; };
+		D90A98851A9CEABE003371AB /* closeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closeButton@2x.png"; sourceTree = "<group>"; };
+		D90A98871A9D0427003371AB /* searchBar_pattern@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "searchBar_pattern@2x.png"; sourceTree = "<group>"; };
+		D90A98891A9D070F003371AB /* currencyTableViewBackGround@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "currencyTableViewBackGround@2x.png"; sourceTree = "<group>"; };
+		D9C9BEF31A98AEF500EF9F16 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C9BEF61A98AEF500EF9F16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9C9BEF81A98AEF500EF9F16 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9C9BEFA1A98AEF500EF9F16 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9C9BEFE1A98AEF500EF9F16 /* Currency Converter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Currency Converter-Info.plist"; sourceTree = "<group>"; };
+		D9C9BF001A98AEF500EF9F16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9C9BF021A98AEF500EF9F16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9C9BF041A98AEF500EF9F16 /* Currency Converter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Currency Converter-Prefix.pch"; sourceTree = "<group>"; };
+		D9C9BF051A98AEF500EF9F16 /* _GISAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _GISAppDelegate.h; sourceTree = "<group>"; };
+		D9C9BF061A98AEF500EF9F16 /* _GISAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _GISAppDelegate.m; sourceTree = "<group>"; };
+		D9C9BF091A98AEF500EF9F16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9C9BF0B1A98AEF500EF9F16 /* _GISViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _GISViewController.h; sourceTree = "<group>"; };
+		D9C9BF0C1A98AEF500EF9F16 /* _GISViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _GISViewController.m; sourceTree = "<group>"; };
+		D9C9BF0E1A98AEF500EF9F16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9C9BF141A98AEF500EF9F16 /* Currency ConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Currency ConverterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9C9BF151A98AEF500EF9F16 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D9C9BF1D1A98AEF500EF9F16 /* Currency ConverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Currency ConverterTests-Info.plist"; sourceTree = "<group>"; };
+		D9C9BF1F1A98AEF500EF9F16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9C9BF211A98AEF500EF9F16 /* Currency_ConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Currency_ConverterTests.m; sourceTree = "<group>"; };
+		D9C9BF321A98B29700EF9F16 /* 2GISRatesServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = 2GISRatesServer.h; path = "MODEL/REMOTE DATA/2GISRatesServer.h"; sourceTree = "<group>"; };
+		D9C9BF331A98B29700EF9F16 /* 2GISRatesServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = 2GISRatesServer.m; path = "MODEL/REMOTE DATA/2GISRatesServer.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9C9BEF01A98AEF500EF9F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90A98641A9B9175003371AB /* AudioToolbox.framework in Frameworks */,
+				D9C9BEF91A98AEF500EF9F16 /* CoreGraphics.framework in Frameworks */,
+				D9C9BEFB1A98AEF500EF9F16 /* UIKit.framework in Frameworks */,
+				D9C9BEF71A98AEF500EF9F16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C9BF111A98AEF500EF9F16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C9BF161A98AEF500EF9F16 /* XCTest.framework in Frameworks */,
+				D9C9BF181A98AEF500EF9F16 /* UIKit.framework in Frameworks */,
+				D9C9BF171A98AEF500EF9F16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D90A98391A9B3D88003371AB /* KeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D90A983A1A9B3E3B003371AB /* 2GISKeyboardButton.h */,
+				D90A983B1A9B3E3B003371AB /* 2GISKeyboardButton.m */,
+				D90A983D1A9B44E5003371AB /* 2GISKeyboardContainer.h */,
+				D90A983E1A9B44E5003371AB /* 2GISKeyboardContainer.m */,
+			);
+			name = KeyBoard;
+			sourceTree = "<group>";
+		};
+		D90A98411A9B46B6003371AB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98741A9CB0AD003371AB /* tick_2@2x.png */,
+				D90A984D1A9B69B9003371AB /* mainBackgroundPattern@2x.png */,
+				D90A98801A9CD09C003371AB /* currenciesScreen */,
+				D90A985D1A9B758B003371AB /* currencyButons */,
+				D90A98421A9B46B6003371AB /* Keyboard */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D90A98421A9B46B6003371AB /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98451A9B62EC003371AB /* keyboardButton_backgroundPattern@2x.png */,
+				D90A98431A9B46B6003371AB /* keyBoard_backgroundPattern@2x.png */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		D90A98491A9B6640003371AB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				D90A984A1A9B6678003371AB /* 2GISMainScreenView.h */,
+				D90A984B1A9B6678003371AB /* 2GISMainScreenView.m */,
+				D90A98711A9CA5F9003371AB /* 2GISDataReceivingPreloader.h */,
+				D90A98721A9CA5F9003371AB /* 2GISDataReceivingPreloader.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		D90A984F1A9B6A65003371AB /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98501A9B6AD4003371AB /* 2GISSourceSum.h */,
+				D90A98511A9B6AD4003371AB /* 2GISSourceSum.m */,
+				D90A98531A9B6D6E003371AB /* 2GISTargetSumLabel.h */,
+				D90A98541A9B6D6E003371AB /* 2GISTargetSumLabel.m */,
+				D90A98601A9B7DD9003371AB /* 2GISSeparator.h */,
+				D90A98611A9B7DD9003371AB /* 2GISSeparator.m */,
+			);
+			name = Labels;
+			sourceTree = "<group>";
+		};
+		D90A98561A9B7219003371AB /* Currency Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98571A9B7256003371AB /* 2GISSourceCurrencyButton.h */,
+				D90A98581A9B7256003371AB /* 2GISSourceCurrencyButton.m */,
+				D90A985A1A9B7276003371AB /* 2GISTardetCurrencyButton.h */,
+				D90A985B1A9B7276003371AB /* 2GISTardetCurrencyButton.m */,
+				D90A986C1A9C6AAA003371AB /* 2GISCurrencySelectionButton.h */,
+				D90A986D1A9C6AAB003371AB /* 2GISCurrencySelectionButton.m */,
+			);
+			name = "Currency Buttons";
+			sourceTree = "<group>";
+		};
+		D90A985D1A9B758B003371AB /* currencyButons */ = {
+			isa = PBXGroup;
+			children = (
+				D90A986F1A9CA2DB003371AB /* squared_metal@2x.png */,
+				D90A985E1A9B758B003371AB /* targetCurrencyButton_pattern@2x.png */,
+			);
+			path = currencyButons;
+			sourceTree = "<group>";
+		};
+		D90A98651A9BA8EC003371AB /* Currencies */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98691A9BA9B1003371AB /* 2GISCurrencies.h */,
+				D90A986A1A9BA9B1003371AB /* 2GISCurrencies.m */,
+			);
+			name = Currencies;
+			sourceTree = "<group>";
+		};
+		D90A98761A9CB709003371AB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98771A9CB72F003371AB /* 2GISKeyBoardHelper.h */,
+				D90A98781A9CB72F003371AB /* 2GISKeyBoardHelper.m */,
+				D90A987A1A9CB94F003371AB /* 2GISCountHelper.h */,
+				D90A987B1A9CB94F003371AB /* 2GISCountHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		D90A98801A9CD09C003371AB /* currenciesScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98891A9D070F003371AB /* currencyTableViewBackGround@2x.png */,
+				D90A98871A9D0427003371AB /* searchBar_pattern@2x.png */,
+				D90A98851A9CEABE003371AB /* closeButton@2x.png */,
+			);
+			path = currenciesScreen;
+			sourceTree = "<group>";
+		};
+		D9C9BEEA1A98AEF400EF9F16 = {
+			isa = PBXGroup;
+			children = (
+				D9C9BEFC1A98AEF500EF9F16 /* Currency Converter */,
+				D9C9BF1B1A98AEF500EF9F16 /* Currency ConverterTests */,
+				D9C9BEF51A98AEF500EF9F16 /* Frameworks */,
+				D9C9BEF41A98AEF500EF9F16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9C9BEF41A98AEF500EF9F16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BEF31A98AEF500EF9F16 /* Currency Converter.app */,
+				D9C9BF141A98AEF500EF9F16 /* Currency ConverterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9C9BEF51A98AEF500EF9F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98631A9B9175003371AB /* AudioToolbox.framework */,
+				D9C9BEF61A98AEF500EF9F16 /* Foundation.framework */,
+				D9C9BEF81A98AEF500EF9F16 /* CoreGraphics.framework */,
+				D9C9BEFA1A98AEF500EF9F16 /* UIKit.framework */,
+				D9C9BF151A98AEF500EF9F16 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9C9BEFC1A98AEF500EF9F16 /* Currency Converter */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF2F1A98AF7F00EF9F16 /* Model */,
+				D9C9BF301A98AF8800EF9F16 /* View */,
+				D9C9BF2D1A98AF3F00EF9F16 /* ViewControllers */,
+				D9C9BF2B1A98AF1300EF9F16 /* Application Delegate */,
+				D9C9BF2C1A98AF2D00EF9F16 /* Storyboards */,
+				D9C9BF2E1A98AF6900EF9F16 /* Bundle Data */,
+			);
+			path = "Currency Converter";
+			sourceTree = "<group>";
+		};
+		D9C9BEFD1A98AEF500EF9F16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98411A9B46B6003371AB /* Images */,
+				D9C9BEFE1A98AEF500EF9F16 /* Currency Converter-Info.plist */,
+				D9C9BEFF1A98AEF500EF9F16 /* InfoPlist.strings */,
+				D9C9BF021A98AEF500EF9F16 /* main.m */,
+				D9C9BF041A98AEF500EF9F16 /* Currency Converter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9C9BF1B1A98AEF500EF9F16 /* Currency ConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF211A98AEF500EF9F16 /* Currency_ConverterTests.m */,
+				D9C9BF1C1A98AEF500EF9F16 /* Supporting Files */,
+			);
+			path = "Currency ConverterTests";
+			sourceTree = "<group>";
+		};
+		D9C9BF1C1A98AEF500EF9F16 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF1D1A98AEF500EF9F16 /* Currency ConverterTests-Info.plist */,
+				D9C9BF1E1A98AEF500EF9F16 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9C9BF2B1A98AF1300EF9F16 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF051A98AEF500EF9F16 /* _GISAppDelegate.h */,
+				D9C9BF061A98AEF500EF9F16 /* _GISAppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		D9C9BF2C1A98AF2D00EF9F16 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF081A98AEF500EF9F16 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D9C9BF2D1A98AF3F00EF9F16 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF0B1A98AEF500EF9F16 /* _GISViewController.h */,
+				D9C9BF0C1A98AEF500EF9F16 /* _GISViewController.m */,
+				D90A987D1A9CC710003371AB /* 2GISCurrenciesViewController.h */,
+				D90A987E1A9CC710003371AB /* 2GISCurrenciesViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D9C9BF2E1A98AF6900EF9F16 /* Bundle Data */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF0E1A98AEF500EF9F16 /* Images.xcassets */,
+				D9C9BEFD1A98AEF500EF9F16 /* Supporting Files */,
+			);
+			name = "Bundle Data";
+			sourceTree = "<group>";
+		};
+		D9C9BF2F1A98AF7F00EF9F16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98761A9CB709003371AB /* Helpers */,
+				D90A98651A9BA8EC003371AB /* Currencies */,
+				D9C9BF311A98AFF800EF9F16 /* Remote Data */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D9C9BF301A98AF8800EF9F16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D90A98561A9B7219003371AB /* Currency Buttons */,
+				D90A984F1A9B6A65003371AB /* Labels */,
+				D90A98491A9B6640003371AB /* MainView */,
+				D90A98391A9B3D88003371AB /* KeyBoard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D9C9BF311A98AFF800EF9F16 /* Remote Data */ = {
+			isa = PBXGroup;
+			children = (
+				D9C9BF321A98B29700EF9F16 /* 2GISRatesServer.h */,
+				D9C9BF331A98B29700EF9F16 /* 2GISRatesServer.m */,
+			);
+			name = "Remote Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9C9BEF21A98AEF500EF9F16 /* Currency Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C9BF251A98AEF500EF9F16 /* Build configuration list for PBXNativeTarget "Currency Converter" */;
+			buildPhases = (
+				D9C9BEEF1A98AEF500EF9F16 /* Sources */,
+				D9C9BEF01A98AEF500EF9F16 /* Frameworks */,
+				D9C9BEF11A98AEF500EF9F16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Currency Converter";
+			productName = "Currency Converter";
+			productReference = D9C9BEF31A98AEF500EF9F16 /* Currency Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9C9BF131A98AEF500EF9F16 /* Currency ConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9C9BF281A98AEF500EF9F16 /* Build configuration list for PBXNativeTarget "Currency ConverterTests" */;
+			buildPhases = (
+				D9C9BF101A98AEF500EF9F16 /* Sources */,
+				D9C9BF111A98AEF500EF9F16 /* Frameworks */,
+				D9C9BF121A98AEF500EF9F16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9C9BF1A1A98AEF500EF9F16 /* PBXTargetDependency */,
+			);
+			name = "Currency ConverterTests";
+			productName = "Currency ConverterTests";
+			productReference = D9C9BF141A98AEF500EF9F16 /* Currency ConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9C9BEEB1A98AEF400EF9F16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = 2GIS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Alexander Dupree - [~/psycho/path]>_";
+				TargetAttributes = {
+					D9C9BF131A98AEF500EF9F16 = {
+						TestTargetID = D9C9BEF21A98AEF500EF9F16;
+					};
+				};
+			};
+			buildConfigurationList = D9C9BEEE1A98AEF400EF9F16 /* Build configuration list for PBXProject "Currency Converter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9C9BEEA1A98AEF400EF9F16;
+			productRefGroup = D9C9BEF41A98AEF500EF9F16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9C9BEF21A98AEF500EF9F16 /* Currency Converter */,
+				D9C9BF131A98AEF500EF9F16 /* Currency ConverterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9C9BEF11A98AEF500EF9F16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90A98881A9D0427003371AB /* searchBar_pattern@2x.png in Resources */,
+				D90A98701A9CA2DB003371AB /* squared_metal@2x.png in Resources */,
+				D90A98861A9CEABE003371AB /* closeButton@2x.png in Resources */,
+				D90A98441A9B46B6003371AB /* keyBoard_backgroundPattern@2x.png in Resources */,
+				D9C9BF0F1A98AEF500EF9F16 /* Images.xcassets in Resources */,
+				D9C9BF011A98AEF500EF9F16 /* InfoPlist.strings in Resources */,
+				D90A985F1A9B758B003371AB /* targetCurrencyButton_pattern@2x.png in Resources */,
+				D90A98461A9B62EC003371AB /* keyboardButton_backgroundPattern@2x.png in Resources */,
+				D90A984E1A9B69B9003371AB /* mainBackgroundPattern@2x.png in Resources */,
+				D90A988A1A9D070F003371AB /* currencyTableViewBackGround@2x.png in Resources */,
+				D9C9BF0A1A98AEF500EF9F16 /* Main.storyboard in Resources */,
+				D90A98751A9CB0AD003371AB /* tick_2@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C9BF121A98AEF500EF9F16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C9BF201A98AEF500EF9F16 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9C9BEEF1A98AEF500EF9F16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90A98621A9B7DD9003371AB /* 2GISSeparator.m in Sources */,
+				D9C9BF071A98AEF500EF9F16 /* _GISAppDelegate.m in Sources */,
+				D90A98551A9B6D6E003371AB /* 2GISTargetSumLabel.m in Sources */,
+				D90A98731A9CA5F9003371AB /* 2GISDataReceivingPreloader.m in Sources */,
+				D9C9BF031A98AEF500EF9F16 /* main.m in Sources */,
+				D90A98791A9CB72F003371AB /* 2GISKeyBoardHelper.m in Sources */,
+				D9C9BF0D1A98AEF500EF9F16 /* _GISViewController.m in Sources */,
+				D90A985C1A9B7276003371AB /* 2GISTardetCurrencyButton.m in Sources */,
+				D90A987F1A9CC710003371AB /* 2GISCurrenciesViewController.m in Sources */,
+				D90A983C1A9B3E3B003371AB /* 2GISKeyboardButton.m in Sources */,
+				D90A986B1A9BA9B1003371AB /* 2GISCurrencies.m in Sources */,
+				D90A987C1A9CB94F003371AB /* 2GISCountHelper.m in Sources */,
+				D9C9BF341A98B29700EF9F16 /* 2GISRatesServer.m in Sources */,
+				D90A98521A9B6AD4003371AB /* 2GISSourceSum.m in Sources */,
+				D90A984C1A9B6678003371AB /* 2GISMainScreenView.m in Sources */,
+				D90A98591A9B7256003371AB /* 2GISSourceCurrencyButton.m in Sources */,
+				D90A986E1A9C6AAB003371AB /* 2GISCurrencySelectionButton.m in Sources */,
+				D90A983F1A9B44E5003371AB /* 2GISKeyboardContainer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9C9BF101A98AEF500EF9F16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9C9BF221A98AEF500EF9F16 /* Currency_ConverterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9C9BF1A1A98AEF500EF9F16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9C9BEF21A98AEF500EF9F16 /* Currency Converter */;
+			targetProxy = D9C9BF191A98AEF500EF9F16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9C9BEFF1A98AEF500EF9F16 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C9BF001A98AEF500EF9F16 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D9C9BF081A98AEF500EF9F16 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C9BF091A98AEF500EF9F16 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9C9BF1E1A98AEF500EF9F16 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9C9BF1F1A98AEF500EF9F16 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9C9BF231A98AEF500EF9F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9C9BF241A98AEF500EF9F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9C9BF261A98AEF500EF9F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Currency Converter/Currency Converter-Prefix.pch";
+				INFOPLIST_FILE = "Currency Converter/Currency Converter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D9C9BF271A98AEF500EF9F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Currency Converter/Currency Converter-Prefix.pch";
+				INFOPLIST_FILE = "Currency Converter/Currency Converter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D9C9BF291A98AEF500EF9F16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Currency Converter.app/Currency Converter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Currency Converter/Currency Converter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Currency ConverterTests/Currency ConverterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D9C9BF2A1A98AEF500EF9F16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Currency Converter.app/Currency Converter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Currency Converter/Currency Converter-Prefix.pch";
+				INFOPLIST_FILE = "Currency ConverterTests/Currency ConverterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9C9BEEE1A98AEF400EF9F16 /* Build configuration list for PBXProject "Currency Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C9BF231A98AEF500EF9F16 /* Debug */,
+				D9C9BF241A98AEF500EF9F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C9BF251A98AEF500EF9F16 /* Build configuration list for PBXNativeTarget "Currency Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C9BF261A98AEF500EF9F16 /* Debug */,
+				D9C9BF271A98AEF500EF9F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9C9BF281A98AEF500EF9F16 /* Build configuration list for PBXNativeTarget "Currency ConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9C9BF291A98AEF500EF9F16 /* Debug */,
+				D9C9BF2A1A98AEF500EF9F16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9C9BEEB1A98AEF400EF9F16 /* Project object */;
+}
