@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ Parent view of the main screen
+ */
 @interface _GISMainScreenView : UIView
 
 @property (nonatomic, strong) IBOutlet UIView *darkness;

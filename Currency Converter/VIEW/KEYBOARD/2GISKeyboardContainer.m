@@ -8,15 +8,15 @@
 
 #import "2GISKeyboardContainer.h"
 
-NSString * const containerPatternImageName = @"keyBoard_backgroundPattern";
-CGFloat const buttonMargin = 3.0f;
-CGFloat const borderWidth = 1.0f;
-CGFloat const cornerRadius = 6.0f;
+NSString * const KCPatternImageName = @"keyBoard_backgroundPattern";
+CGFloat const KCButtonMargin = 3.0f;
+CGFloat const KCBorderWidth = 1.0f;
+CGFloat const KCCornerRadius = 6.0f;
 
-CGFloat const buttonShadowWidth = 1.0f;
-CGFloat const buttonShadowHeight = 1.0f;
-CGFloat const buttonShadowOpacity = 0.4f;
-CGFloat const buttonShadowRadius = 2.0f;
+CGFloat const KCButtonShadowWidth = 1.0f;
+CGFloat const KCButtonShadowHeight = 1.0f;
+CGFloat const KCButtonShadowOpacity = 0.4f;
+CGFloat const KCButtonShadowRadius = 2.0f;
 
 @implementation _GISKeyboardContainer
 
@@ -26,15 +26,15 @@ CGFloat const buttonShadowRadius = 2.0f;
 - (void)setup
 {
     //set up the background of keyboard container
-    UIImage *patternImage = [UIImage imageNamed:containerPatternImageName];
+    UIImage *patternImage = [UIImage imageNamed:KCPatternImageName];
     UIColor *colorWithPattern = [UIColor colorWithPatternImage:patternImage];
     [self setBackgroundColor:[UIColor clearColor]];
     [self.layer setBackgroundColor:colorWithPattern.CGColor];
     
     //setting up the shape of button
     [self.layer setBorderColor:[UIColor lightGrayColor].CGColor];
-    [self.layer setBorderWidth:borderWidth];
-    [self.layer setCornerRadius:cornerRadius];
+    [self.layer setBorderWidth:KCBorderWidth];
+    [self.layer setCornerRadius:KCCornerRadius];
     
 }
 
@@ -67,8 +67,8 @@ CGFloat const buttonShadowRadius = 2.0f;
     
     for (NSUInteger i=1; i<13; i++){
         
-        CGFloat buttonWidth = self.bounds.size.width/3-buttonMargin*2;
-        CGFloat buttonHeight = self.bounds.size.height/4-buttonMargin*2;
+        CGFloat buttonWidth = self.bounds.size.width/3-KCButtonMargin*2;
+        CGFloat buttonHeight = self.bounds.size.height/4-KCButtonMargin*2;
         
         if((i-1)%3 == 0 && i != 1)
         {
@@ -77,8 +77,8 @@ CGFloat const buttonShadowRadius = 2.0f;
         }
         
         _GISKeyboardButton *keyboardButton = [[_GISKeyboardButton alloc] init];
-        [keyboardButton setFrame:CGRectMake(self.bounds.origin.x+buttonMargin+kx*(buttonWidth + 2*buttonMargin),
-                                            self.bounds.origin.y+buttonMargin+ky*(buttonHeight + 2*buttonMargin),
+        [keyboardButton setFrame:CGRectMake(self.bounds.origin.x+KCButtonMargin+kx*(buttonWidth + 2*KCButtonMargin),
+                                            self.bounds.origin.y+KCButtonMargin+ky*(buttonHeight + 2*KCButtonMargin),
                                             buttonWidth,
                                             buttonHeight)];
         
@@ -141,7 +141,7 @@ CGFloat const buttonShadowRadius = 2.0f;
 
 - (IBAction)cancelTouch:(_GISKeyboardButton *)button
 {
-    [button.layer setShadowRadius:buttonShadowRadius];
+    [button.layer setShadowRadius:KCButtonShadowRadius];
 }
 
 - (IBAction)touchDown:(_GISKeyboardButton *)button

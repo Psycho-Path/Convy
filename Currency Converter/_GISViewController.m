@@ -10,7 +10,7 @@
 
 CGFloat const statusBarHeight = 20.0f;
 CGFloat const separatorOffset = 40.0f;
-CGFloat const separatorheight = 4.0f;
+CGFloat const separatorHeight = 4.0f;
 
 NSString * const segueId = @"showMoreCurrencies";
 
@@ -85,9 +85,9 @@ NSString * const segueId = @"showMoreCurrencies";
     
     //draw separator between labels
     separator = [[_GISSeparator alloc] initWithFrame:CGRectMake(separatorOffset,
-                                                                               sourceLabel.bounds.size.height-separatorheight/2+statusBarHeight,
+                                                                               sourceLabel.bounds.size.height-separatorHeight/2+statusBarHeight,
                                                                                self.view.bounds.size.width-2*separatorOffset,
-                                                                               separatorheight)];
+                                                                               separatorHeight)];
     [self.view addSubview:separator];
     [self.view addSubview:sourceLabel];
     

@@ -8,12 +8,12 @@
 
 #import "2GISDataReceivingPreloader.h"
 
-CGFloat const preloaderViewWidthHeight = 200.0f;
-CGFloat const preloaderViewCornerRadius = 6.0f;
-CGFloat const preloaderViewShadowWidth = 1.0f;
-CGFloat const preloaderViewShadowHeight = 1.0f;
-CGFloat const preloaderViewShadowRadius = 3.0f;
-NSString * const tickImageName = @"tick_2";
+CGFloat const PVWidthHeight = 200.0f;
+CGFloat const PVCornerRadius = 6.0f;
+CGFloat const PVShadowWidth = 1.0f;
+CGFloat const PVShadowHeight = 1.0f;
+CGFloat const PVShadowRadius = 3.0f;
+NSString * const PVTickImageName = @"tick_2";
 
 @implementation _GISDataReceivingPreloader
 
@@ -47,16 +47,16 @@ NSString * const tickImageName = @"tick_2";
 
 - (void)drawViewWithPreloader
 {
-    viewWithPreloader = [[UIView alloc] initWithFrame:CGRectMake((self.bounds.size.width-preloaderViewWidthHeight)/2,
-                                                                (self.bounds.size.height-preloaderViewWidthHeight)/2,
-                                                                preloaderViewWidthHeight,
-                                                                 preloaderViewWidthHeight)];
+    viewWithPreloader = [[UIView alloc] initWithFrame:CGRectMake((self.bounds.size.width-PVWidthHeight)/2,
+                                                                (self.bounds.size.height-PVWidthHeight)/2,
+                                                                PVWidthHeight,
+                                                                 PVWidthHeight)];
     [viewWithPreloader setBackgroundColor:[UIColor clearColor]];
-    [viewWithPreloader.layer setCornerRadius:preloaderViewCornerRadius];
+    [viewWithPreloader.layer setCornerRadius:PVCornerRadius];
     [self.layer setShadowColor:[UIColor whiteColor].CGColor];
-    [self.layer setShadowOffset:CGSizeMake(preloaderViewShadowWidth, preloaderViewWidthHeight)];
+    [self.layer setShadowOffset:CGSizeMake(PVShadowWidth, PVWidthHeight)];
     [self.layer setShadowOpacity:0.6f];
-    [self.layer setShadowRadius:preloaderViewShadowRadius];
+    [self.layer setShadowRadius:PVShadowRadius];
     [viewWithPreloader.layer setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.6f].CGColor];
     [self addSubview:viewWithPreloader];
     
@@ -76,7 +76,7 @@ NSString * const tickImageName = @"tick_2";
 - (void)showSuccessStatus
 {
     [activityIndicator stopAnimating];
-    UIImage *tickImage = [UIImage imageNamed:tickImageName];
+    UIImage *tickImage = [UIImage imageNamed:PVTickImageName];
     UIImageView *tickImageView = [[UIImageView alloc] initWithImage:tickImage];
     [tickImageView setFrame:CGRectMake((viewWithPreloader.bounds.size.width-tickImage.size.width)/2,
                                       (viewWithPreloader.bounds.size.height-tickImage.size.height)/2,

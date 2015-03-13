@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**
+ Source currency button view class
+ */
 @interface _GISSourceCurrencyButton : UIButton
 
 /**

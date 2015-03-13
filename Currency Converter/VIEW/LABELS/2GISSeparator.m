@@ -8,10 +8,10 @@
 
 #import "2GISSeparator.h"
 
-CGFloat const shadowWidth = 1.0f;
-CGFloat const shadowHeight = 1.0f;
-CGFloat const shadowOpacity = 0.4f;
-CGFloat const shadowRadius = 2.0f;
+CGFloat const SBLShadowWidth = 1.0f;
+CGFloat const SBLShadowHeight = 1.0f;
+CGFloat const SBLShadowOpacity = 0.4f;
+CGFloat const SBLShadowRadius = 2.0f;
 
 @implementation _GISSeparator
 
@@ -45,9 +45,9 @@ CGFloat const shadowRadius = 2.0f;
     
     [self.layer setCornerRadius:self.bounds.size.height/2];
     [self.layer setShadowColor:[UIColor blackColor].CGColor];
-    [self.layer setShadowOffset:CGSizeMake(shadowWidth, shadowHeight)];
-    [self.layer setShadowOpacity:shadowOpacity];
-    [self.layer setShadowRadius:shadowRadius];
+    [self.layer setShadowOffset:CGSizeMake(SBLShadowWidth, SBLShadowHeight)];
+    [self.layer setShadowOpacity:SBLShadowOpacity];
+    [self.layer setShadowRadius:SBLShadowRadius];
     
 }
 

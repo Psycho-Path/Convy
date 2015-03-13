@@ -10,14 +10,14 @@
 
 #define FONT_COLOR [UIColor colorWithRed:250.0f/255.0f green:85.0f/255.0f blue:132.0f/255.0f alpha:1.0f]
 
-NSString * const targetLabelFontName = @"Helvetica-Bold";
-CGFloat const targetLabelFontSize = 48.0f;
-CGFloat const currencyButtonOffset = 5.0f;
+NSString * const TLFontName = @"Helvetica-Bold";
+CGFloat const TLFontSize = 48.0f;
+CGFloat const TLCurrencyButtonOffset = 5.0f;
 
-CGFloat const shadowWidth = 1.0f;
-CGFloat const shadowHeight = 1.0f;
-CGFloat const shadowOpacity = 0.4f;
-CGFloat const shadowRadius = 2.0f;
+CGFloat const TLShadowWidth = 1.0f;
+CGFloat const TLShadowHeight = 1.0f;
+CGFloat const TLShadowOpacity = 0.4f;
+CGFloat const TLShadowRadius = 2.0f;
 
 @interface _GISTargetSumLabel ()
 
@@ -43,13 +43,13 @@ CGFloat const shadowRadius = 2.0f;
     [self setBackgroundColor:[UIColor clearColor]];
     [self setTextColor:FONT_COLOR];
     [self setTextAlignment:NSTextAlignmentCenter];
-    [self setFont:[UIFont fontWithName:targetLabelFontName size:targetLabelFontSize]];
+    [self setFont:[UIFont fontWithName:TLFontName size:TLFontSize]];
     [self setText:@"0"];
     
     [self.layer setShadowColor:[UIColor blackColor].CGColor];
-    [self.layer setShadowOffset:CGSizeMake(shadowWidth, shadowHeight)];
-    [self.layer setShadowOpacity:shadowOpacity];
-    [self.layer setShadowRadius:shadowRadius];
+    [self.layer setShadowOffset:CGSizeMake(TLShadowWidth, TLShadowHeight)];
+    [self.layer setShadowOpacity:TLShadowOpacity];
+    [self.layer setShadowRadius:TLShadowRadius];
     
     [self setBaselineAdjustment:UIBaselineAdjustmentAlignBaselines];
     [self setLineBreakMode:NSLineBreakByClipping];
@@ -83,10 +83,10 @@ CGFloat const shadowRadius = 2.0f;
 {
     if(currencyButton) [currencyButton removeFromSuperview];
     
-    CGFloat currencyButtonWidthHeight = self.bounds.size.height/2 - 2*currencyButtonOffset;
+    CGFloat currencyButtonWidthHeight = self.bounds.size.height/2 - 2*TLCurrencyButtonOffset;
     currencyButton = [[_GISTardetCurrencyButton alloc] initWithFrame:
-                                                CGRectMake(currencyButtonOffset,
-                                                           self.bounds.size.height-currencyButtonOffset-currencyButtonWidthHeight,
+                                                CGRectMake(TLCurrencyButtonOffset,
+                                                           self.bounds.size.height-TLCurrencyButtonOffset-currencyButtonWidthHeight,
                                                            currencyButtonWidthHeight,
                                                            currencyButtonWidthHeight)];
     [currencyButton updateSelectedCurrency];
@@ -116,10 +116,10 @@ CGFloat const shadowRadius = 2.0f;
 
 - (void)drawAdditionlButtons
 {
-    CGFloat currencyButtonWidthHeight = self.bounds.size.height/2 - 2*currencyButtonOffset;
+    CGFloat currencyButtonWidthHeight = self.bounds.size.height/2 - 2*TLCurrencyButtonOffset;
     
-    CGRect startFrame = CGRectMake(currencyButtonOffset,
-                                   self.bounds.size.height-currencyButtonOffset-currencyButtonWidthHeight,
+    CGRect startFrame = CGRectMake(TLCurrencyButtonOffset,
+                                   self.bounds.size.height-TLCurrencyButtonOffset-currencyButtonWidthHeight,
                                    currencyButtonWidthHeight,
                                    currencyButtonWidthHeight);
     

@@ -13,7 +13,7 @@
 @protocol _GISTargetLabelDelegate <NSObject>
 
 /**
- Let reciever know when user tapped currency button
+ Let reciever know when user taps currency button
  */
 - (void)targetCurrencyButtonDidTap;
 /**

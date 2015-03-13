@@ -12,7 +12,7 @@
 
 @protocol _GISSourceLabelDelegate <NSObject>
 /**
- Let reciever know when user tapped currency button
+ Let reciever know when user taps currency button
  */
 - (void)sourceCurrencyButtonDidTap;
 /**
@@ -28,7 +28,7 @@
 @end
 
 /**
- Source label view
+ Source label view class
  */
 @interface _GISSourceSum : UILabel
 

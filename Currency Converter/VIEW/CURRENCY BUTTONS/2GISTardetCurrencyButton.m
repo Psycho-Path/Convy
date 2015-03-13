@@ -11,12 +11,12 @@
 #define TARGET_PATTERN [UIColor colorWithPatternImage:[UIImage imageNamed:@"targetCurrencyButton_pattern"]].CGColor
 #define BUTTON_TEXT_COLOR [UIColor colorWithRed:250.0f/255.0f green:85.0f/255.0f blue:132.0f/255.0f alpha:1.0f]
 
-CGFloat const shadowWidth = 1.0f;
-CGFloat const shadowHeight = 1.0f;
-CGFloat const shadowOpacity = 0.4f;
-CGFloat const shadowRadius = 2.0f;
-NSString * const tFontName = @"Helvetica-Light";
-CGFloat const tFontSize = 21.0f;
+CGFloat const TCBShadowWidth = 1.0f;
+CGFloat const TCBShadowHeight = 1.0f;
+CGFloat const TCBShadowOpacity = 0.4f;
+CGFloat const TCBShadowRadius = 2.0f;
+NSString * const TCBFontName = @"Helvetica-Light";
+CGFloat const TCBFontSize = 21.0f;
 
 @implementation _GISTardetCurrencyButton
 
@@ -29,7 +29,7 @@ CGFloat const tFontSize = 21.0f;
     [self setBackgroundColor:[UIColor clearColor]];
     [self.layer setBackgroundColor:TARGET_PATTERN];
     [self setTitleColor:BUTTON_TEXT_COLOR forState:UIControlStateNormal];
-    [self.titleLabel setFont:[UIFont fontWithName:tFontName size:tFontSize]];
+    [self.titleLabel setFont:[UIFont fontWithName:TCBFontName size:TCBFontSize]];
 }
 
 - (void)awakeFromNib
@@ -52,9 +52,9 @@ CGFloat const tFontSize = 21.0f;
     //setting up shape and shadow of target button
     [self.layer setCornerRadius:self.bounds.size.width/2];
     [self.layer setShadowColor:[UIColor blackColor].CGColor];
-    [self.layer setShadowOffset:CGSizeMake(shadowWidth, shadowHeight)];
-    [self.layer setShadowOpacity:shadowOpacity];
-    [self.layer setShadowRadius:shadowRadius];
+    [self.layer setShadowOffset:CGSizeMake(TCBShadowWidth, TCBShadowHeight)];
+    [self.layer setShadowOpacity:TCBShadowOpacity];
+    [self.layer setShadowRadius:TCBShadowRadius];
 }
 
 - (void)updateSelectedCurrency
